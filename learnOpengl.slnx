@@ -7,18 +7,18 @@
   <Project Path="advanced_lighting/advanced_lighting.vcxproj" Id="04a25018-686d-4ce0-96eb-ebe33f93cdfa" />
   <Project Path="basic_lighting/basic_lighting.vcxproj" Id="910acbf7-0558-43ff-a747-74ab3e2148c2" />
   <Project Path="camera/camera.vcxproj" Id="761efe2f-8269-4aba-89c7-d041ea4dcd2f" />
-  <Project Path="circule/circule.vcxproj" />
+  <Project Path="circule/circule.vcxproj" Id="1084477e-26b1-43e0-8914-d103e3b7051e" />
   <Project Path="color/color.vcxproj" Id="bdc29b61-10ec-4d28-a2b3-a0a63f967f27" />
   <Project Path="coordinate/coordinates.vcxproj" Id="0e34d6dd-c341-4c5b-adc3-e27ffc90f6ca" />
   <Project Path="depth_testing/depth_testing.vcxproj" Id="45f8cb8e-c6a6-4ed2-9aaa-379e73e21669" />
+  <Project Path="esfera/esfera.vcxproj" />
   <Project Path="framebuffers/framebuffers.vcxproj" Id="ad15d24f-fc28-40f3-b085-838fef361ef4" />
-  <Project Path="jogo/jogo.vcxproj" Id="4617efc6-8ac6-4e61-81ff-421960cf6bff" />
   <Project Path="learnOpengl/learnOpengl.vcxproj" Id="424c7f6f-9982-4777-bb9c-1c535ce3fc86" />
   <Project Path="lighting_casters/light_casters.vcxproj" Id="dc8d3165-bd30-4071-b602-015d4a7990eb" />
   <Project Path="lighting_maps/lighting_maps.vcxproj" Id="9200c339-468a-43cb-96d3-26ec147c790a" />
   <Project Path="materials/materials.vcxproj" Id="d9e925a2-9bbe-4e1f-9895-91185d6635c1" />
   <Project Path="multiple_lights/multiple_ligths.vcxproj" Id="25cb3220-7dee-4c10-8f85-3d885f0add96" />
-  <Project Path="surface_revolution/surface_revolution.vcxproj" />
+  <Project Path="surface_revolution/surface_revolution.vcxproj" Id="7dacdf02-a48f-4b60-a150-0e50b462eaf2" />
   <Project Path="textura_ex/textura.vcxproj" Id="d76ea09d-ab1d-422b-b185-32e9bc08b113" />
   <Project Path="transformations/transformations.vcxproj" Id="28adefe2-1adb-471b-8c4f-96ce3c1148b5" />
 </Solution>

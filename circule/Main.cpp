@@ -9,30 +9,34 @@
 
 using point_t = glm::vec3;
 
-std::vector<point_t> Circle(point_t centro, float raio, int lados)
+using point_t = glm::vec3;
+std::vector<point_t> Esfera(point_t centro, float raio, int lados)
 {
     std::vector<point_t> vertices;
     vertices.reserve(lados * 3);
 
     for (int i = 0; i < lados; i++)
     {
-        float angle = (2.0f * 3.14159265f * i) / lados;
-        float x = centro.x + raio * std::cos(angle);
-        float y = centro.y + raio * std::sin(angle);
-        float z = centro.z;
-        
+        float theta = (2.0f * 3.14159265f * i) / lados;
+        float phi = (3.14159265f * i) / lados;
+
+        float x = centro.x + raio * std::sin(phi) * std::cos(theta);
+        float y = centro.y + raio * std::cos(phi);
+        float z = centro.z + raio * std::sin(phi) * std::sin(theta);
+
         vertices.push_back(centro);
         vertices.push_back({ x, y, z });
 
-        float next_angle = (2.0f * 3.14159265f * (i + 1)) / lados;
-		x = centro.x + raio * std::cos(next_angle) ;
-		y =  centro.y + raio * std::sin(next_angle);
-        z = centro.z;
+        float next_theta = (2.0f * 3.14159265f * (i + 1)) / lados;
+        float next_phi = (3.14159265f * (i + 1)) / lados;
 
-		vertices.push_back({ x, y, z });           
+
+        vertices.push_back({ centro.x + raio * std::sin(next_phi) * std::cos(next_theta),
+                            centro.y + raio * std::cos(next_phi),
+                            centro.z + raio * std::sin(next_phi) * std::sin(next_theta) });
+
+        return vertices;
     }
-	return vertices;
-}
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -74,7 +78,7 @@ int main()
     // build and compile our shader zprogram
     Shader ourShader("Vcolor.glsl", "Fcolor.glsl");
 
-    std::vector<point_t> circleVertices = Circle({ 0.0f, 0.0f, 0.0f }, 0.5f, 30);
+    std::vector<point_t> circleVertices = Circle({ 0.0f, 0.0f, 0.0f }, 0.5f, 24);
  
     unsigned int VBO, VAO;
     glGenVertexArrays(1, &VAO);
@@ -109,10 +113,10 @@ int main()
         glBindVertexArray(VAO);
         
         ourShader.setVec3("ourColor", 1.0f, 0.5f, 0.2f);
-        //glPointSize(2.0f);
+        glPointSize(8.0f);
         //glDrawArrays(GL_POINTS, 0, circleVertices.size());
-        //glDrawArrays(GL_LINE_LOOP, 0, circleVertices.size());
-        glDrawArrays(GL_TRIANGLES, 0, circleVertices.size());
+        glDrawArrays(GL_LINE_LOOP, 0, circleVertices.size());
+        //glDrawArrays(GL_TRIANGLES, 0, circleVertices.size());
 
         glfwSwapBuffers(window);
         glfwPollEvents();

@@ -37,9 +37,6 @@ std::vector<point_t> Circle(point_t centro, float raio, int lados)
 }
 
 
-
-
-
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
@@ -102,7 +99,6 @@ int main()
 
     ourShader.use();
 
-	
 
     // render loop
     while (!glfwWindowShouldClose(window))
