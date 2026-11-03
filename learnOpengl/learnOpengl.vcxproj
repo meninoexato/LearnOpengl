@@ -24,8 +24,6 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\coordinate\coordinates.vcxproj" />
-    <None Include="..\coordinate\coordinates.vcxproj.filters" />
     <None Include="Fcolor.glsl" />
     <None Include="Fcube.glsl" />
     <None Include="Vcolor.glsl" />

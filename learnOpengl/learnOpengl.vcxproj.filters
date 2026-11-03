@@ -30,8 +30,6 @@
     <None Include="Fcube.glsl" />
     <None Include="Vcolor.glsl" />
     <None Include="Vcube.glsl" />
-    <None Include="..\coordinate\coordinates.vcxproj" />
-    <None Include="..\coordinate\coordinates.vcxproj.filters" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
