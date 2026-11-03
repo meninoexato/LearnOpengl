@@ -13,7 +13,7 @@
   <Project Path="depth_testing/depth_testing.vcxproj" Id="45f8cb8e-c6a6-4ed2-9aaa-379e73e21669" />
   <Project Path="esfera/esfera.vcxproj" Id="4a4802ad-01e8-4e02-8e22-7ef0265a861a" />
   <Project Path="framebuffers/framebuffers.vcxproj" Id="ad15d24f-fc28-40f3-b085-838fef361ef4" />
-  <Project Path="JoltPhysics/JoltPhysics.vcxproj" />
+  <Project Path="JoltPhysics/JoltPhysics.vcxproj" Id="3ad6a212-9aba-4d96-9726-f9922ebcc06b" />
   <Project Path="learnOpengl/learnOpengl.vcxproj" Id="424c7f6f-9982-4777-bb9c-1c535ce3fc86" />
   <Project Path="lighting_casters/light_casters.vcxproj" Id="dc8d3165-bd30-4071-b602-015d4a7990eb" />
   <Project Path="lighting_maps/lighting_maps.vcxproj" Id="9200c339-468a-43cb-96d3-26ec147c790a" />

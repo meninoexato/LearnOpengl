@@ -11,12 +11,7 @@
 #include <vector>
 #include <cmath>
 
-
-
-
-
 using point_t = glm::vec3;
-
 
 std::vector<point_t> Esfera(point_t centro, float raio, int stacks, int slices);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
