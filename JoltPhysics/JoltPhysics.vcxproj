@@ -127,13 +127,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;JPH_DEBUG;JPH_FLOATING_POINT_EXCEPTIONS_ENABLED;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_OBJECT_STREAM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;C:\Dev\JoltPhysics</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\Jolt\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2022;C:\Dev\JoltPhysics\Build\VS2026_CL\Debug</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2022;$(SolutionDir)Dependencies\Jolt\lib-vc2026</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3_mt.lib;opengl32.lib;Jolt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>

@@ -12,6 +12,7 @@
 
 // Sempre inclua Jolt.h antes dos demais cabeçalhos do Jolt.
 #include <Jolt/Jolt.h>
+
 #include <Jolt/RegisterTypes.h>
 #include <Jolt/Core/Factory.h>
 #include <Jolt/Core/TempAllocator.h>
